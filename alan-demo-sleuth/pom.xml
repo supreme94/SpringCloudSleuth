@@ -3,12 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>cn.com.sina</groupId>
-		<artifactId>alan-parent</artifactId>
-		<version>1.0-SNAPSHOT</version>
-		<relativePath />
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-parent</artifactId>
+		<version>Camden.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	
+
 	<artifactId>alan-demo-sleuth</artifactId>
 	<packaging>jar</packaging>
 	<name>${project.artifactId}</name>
@@ -36,4 +36,22 @@
 		</plugins>
 	</build>
 
+	<repositories>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 </project>
